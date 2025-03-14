@@ -22,7 +22,7 @@ function Home() {
       Learn React
     </a>
     <p>Contador: {count}</p>
-    <button onClick={() => setCount(count + 1)}>Incrementar</button>
+    <button className="button" onClick={() => setCount(count + 1)}>Incrementar</button>
 
   </div>
   );

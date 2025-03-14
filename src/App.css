@@ -1,22 +1,31 @@
-.App {
-  text-align: center;
-  /* padding: 20px; */
+/* Koloreak */
+:root {
+  --primary-color: #1A73E8;
+  --secondary-color: #121212;
+  --background-color: #1E1E1E;
+  --text-color-light: #FFFFFF;
+  --text-color-dark: #E0E0E0;
+  --accent-color: #8AB4F8;
+  --detail-color: #5F6368;
+}
+/* Estilo orokorrak */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color-dark);
+  margin: 0;
+  padding: 0;
+}
+
+/* Nabegazio barra */
+nav, footer {
+  background-color: var(--secondary-color);
+  color: var(--text-color-light);
+  padding: 1rem;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-header {
-  background-color: #282c34;
-  padding: 20px;
-  color: white;
-}
-nav {
-  background-color: #333;
-  color: white;
-  padding: 1rem;
 }
 
 nav ul {
@@ -27,25 +36,50 @@ nav ul {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--text-color-light);
+  transition: color 0.3s ease;
   text-decoration: none;
 }
-
-.article {
-  margin: 2rem;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+nav ul li a:hover {
+  color: var(--accent-color);
 }
 
+/* Artikuluak */
+.article {
+  background-color: var(--text-color-light);
+  margin: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--detail-color);
+  border-radius: 8px;
+}
+.article h2 {
+  color: var(--primary-color);
+}
+
+/* Pie de página */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--text-color-light);
   text-align: center;
   padding: 1rem;
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+/* Botones (si los agregas) */
+.button {
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--accent-color);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -55,19 +89,18 @@ footer {
 }
 
 .App-body {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
+/* .App-link {
   color: #61dafb;
-}
+} */
 
 @keyframes App-logo-spin {
   from {
