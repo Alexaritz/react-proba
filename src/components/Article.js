@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Article = ({ title, content, images, videos }) => {
+const Article = ({ name, description, images, videos }) => {
   return (
     <div className="article">
-      <h2>{title}</h2>
-      <p>{content}</p>
+      <h2>{name}</h2>
+      <p>{description}</p>
       {images && images.map((img, index) => (
         <img key={index} src={img} alt={`Imagen ${index + 1}`} />
       ))}

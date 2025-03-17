@@ -46,7 +46,7 @@ nav ul li a:hover {
 
 /* Artikuluak */
 .article {
-  background-color: var(--text-color-light);
+  background-color: var(--secondary-color);
   margin: 2rem;
   padding: 1rem;
   border: 1px solid var(--detail-color);
