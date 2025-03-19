@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router';
 import Home from './pages/Home';
 import BikeBrands from './pages/BikeBrands';
+import BrandModels from './pages/BrandModels';
 import BikeComponents from './pages/BikeComponents';
 import { createClient } from "@supabase/supabase-js";
 
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/bike-brands" element={<BikeBrands />} />
+          <Route path="/brand-models" element={<BrandModels />} />
           <Route path="/bike-components" element={<BikeComponents />} />
         </Routes>
         <Footer />
